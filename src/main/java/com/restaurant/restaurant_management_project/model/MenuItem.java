@@ -6,15 +6,15 @@ import org.jetbrains.annotations.NotNull;
 import java.math.BigDecimal;
 
 public class MenuItem {
-    String code;
-    String name;
-    Image image;
-    BigDecimal price;
-    float vat;
-    String unit;
-    String category;
-    MenuItem sideDish;
-    boolean status;
+    private String code;
+    private String name;
+    private Image image;
+    private BigDecimal price;
+    private float vat;
+    private String unit;
+    private String category;
+    private MenuItem sideDish;
+    private boolean status;
 
     public String getCode() {
         return code;
