@@ -107,7 +107,18 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+<!--        <dependency>
+            <groupId>com.mycrosoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>11.2.3.jre17</version>
+        </dependency>-->
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>12.10.0.jre8</version>
+        </dependency>
     </dependencies>
+    
     <build>
         <plugins>
             <plugin>
