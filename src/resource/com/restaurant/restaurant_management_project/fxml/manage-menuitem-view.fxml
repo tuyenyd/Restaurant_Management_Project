@@ -29,8 +29,8 @@
 <!--Các chức năng khác bên dưới-->
     <VBox>
 <!--        Khu vực cho chức năng tìm kiếm và lọc-->
-        <HBox spacing="5">
-            <TextField fx:id="searchField" styleClass="search-field" promptText="Nhập tên món ăn"/>
+        <HBox spacing="5" alignment="CENTER_LEFT">
+            <TextField fx:id="searchField" styleClass="search-field" promptText="Nhập tên món ăn" />
             <Button styleClass="search-btn" fx:id="searchBtn">
                 <graphic>
                     <ImageView fitHeight="16" fitWidth="16">
