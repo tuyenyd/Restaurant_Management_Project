@@ -16,17 +16,19 @@
       styleClass="side-bar"
       fx:id="sideBar"
 >
-
     <HBox>
         <ImageView fx:id="logo" styleClass="logo"/>
         <Text fx:id="name" text="Ten cua hang"/>
     </HBox>
     <VBox fx:id="navMenu" styleClass="nav-menu">
-        <Button styleClass="nav-button" text="Quản lý nhân viên">
+        <Button styleClass="nav-button" >
             <graphic>
-                <ImageView fitWidth="16" fitHeight="16">
-                    <Image url="@../image/em.png"/>
-                </ImageView>
+                <HBox>
+                    <ImageView fitWidth="16" fitHeight="16">
+                        <Image url="@../image/em.png"/>
+                    </ImageView>
+                    <Text text="Quản lý thực đơn" styleClass="button-text"/>
+                </HBox>
             </graphic>
         </Button>
     </VBox>
