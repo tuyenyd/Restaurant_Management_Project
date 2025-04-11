@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.restaurant.restaurant_management_project.model;
 
 import java.sql.Date;
@@ -10,7 +6,7 @@ import java.sql.Date;
  *
  * @author admin
  */
-public class equipment {
+public class Equipment {
     String MaDungCu;
     String MaNV;
     String TenDungCu;
@@ -19,10 +15,10 @@ public class equipment {
     String TinhTrang;
     Date NgayThongKe;
 
-    public equipment() {
+    public Equipment() {
     }
 
-    public equipment(String MaDungCu, String MaNV, String TenDungCu, String Loai, int SoLuong, String TinhTrang, Date NgayThongKe) {
+    public Equipment(String MaDungCu, String MaNV, String TenDungCu, String Loai, int SoLuong, String TinhTrang, Date NgayThongKe) {
         this.MaDungCu = MaDungCu;
         this.MaNV = MaNV;
         this.TenDungCu = TenDungCu;

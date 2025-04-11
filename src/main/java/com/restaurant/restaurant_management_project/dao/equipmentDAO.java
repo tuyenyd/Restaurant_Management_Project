@@ -4,7 +4,7 @@
  */
 package com.restaurant.restaurant_management_project.dao;
 import com.restaurant.restaurant_management_project.database.DatabaseConnection;
-import com.restaurant.restaurant_management_project.model.equipment;
+import com.restaurant.restaurant_management_project.model.Equipment;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -18,16 +18,16 @@ import java.util.logging.Logger;
  *
  * @author admin
  */
-public class equipmentDAO {
-    public List<equipment> GetAllEquipment(){
-        List<equipment> equipments = new ArrayList<>();
+public class EquipmentDAO {
+    public List<Equipment> GetAllEquipment(){
+        List<Equipment> equipments = new ArrayList<>();
         String sql = "SELECT * FROM DungCu";
         
         try(Connection connection = DatabaseConnection.GetConnection();
             PreparedStatement stmt = connection.prepareStatement(sql);
             ResultSet rs = stmt.executeQuery()){
             while(rs.next()){
-                equipment equip = new equipment();
+                Equipment equip = new Equipment();
                 equip.setMaDungCu(rs.getString("MaDungCu"));
                 equip.setMaNV(rs.getString("MaNV"));
                 equip.setTenDungCu(rs.getString("TenDungCu"));
@@ -44,7 +44,7 @@ public class equipmentDAO {
         }
         return equipments; 
     }
-    public boolean addEquipment(equipment equip){
+    public boolean addEquipment(Equipment equip){
         String sql = "INSERT INTO DungCu (MaDungCu, TenDungCu, Loai, SoLuong, TinhTrang,"
                 + "NgayThongKe, MaNV) VALUES (?,?,?,?,?,?,?)";
         try(Connection connection = DatabaseConnection.GetConnection();
@@ -66,7 +66,7 @@ public class equipmentDAO {
             return false;
         }
     }
-    public boolean updateEquipment(equipment equip){
+    public boolean updateEquipment(Equipment equip){
         String sql = "UPDATE DungCu SET TenDungCu = ?, Loai = ?, SoLuong = ?,"
                 + "TinhTrang = ?, NgayThongKe = ?, MaNV = ? WHERE MaDungCu = ?";
         try(Connection connection = DatabaseConnection.GetConnection();
