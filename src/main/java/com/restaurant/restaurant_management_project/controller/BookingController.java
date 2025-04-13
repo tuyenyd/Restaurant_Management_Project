@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class BookingController {
-    // Các thành phần FXML hiện có
     @FXML private TextField customerName;
     @FXML private TextField phoneNumber;
     @FXML private DatePicker bookingDate;
@@ -21,7 +20,6 @@ public class BookingController {
     @FXML private TextArea notes;
     @FXML private TableView<RestaurantTable> availableTablesTable;
 
-    // Danh sách các bàn trong nhà hàng (dữ liệu mẫu)
     private final List<RestaurantTable> allTables = Arrays.asList(
             new RestaurantTable(1, "B01", "Tầng 1", 4, "Trống"),
             new RestaurantTable(2, "B02", "Tầng 1", 6, "Trống"),
@@ -35,15 +33,13 @@ public class BookingController {
 
     @FXML
     public void initialize() {
-        // Thiết lập giá trị mặc định cho Spinner
+       
         SpinnerValueFactory<Integer> valueFactory =
                 new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 20, 2);
         peopleCount.setValueFactory(valueFactory);
 
-        // Thiết lập ngày mặc định là hôm nay
         bookingDate.setValue(LocalDate.now());
 
-        // Thêm các giờ vào ComboBox
         bookingTime.getItems().addAll(
                 "08:00", "08:30", "09:00", "09:30", "10:00", "10:30",
                 "11:00", "11:30", "12:00", "12:30", "13:00", "13:30",
@@ -57,7 +53,6 @@ public class BookingController {
     }
 
     private void setupTableView() {
-        // Ẩn TableView ban đầu
         availableTablesTable.setVisible(false);
     }
 
@@ -75,7 +70,6 @@ public class BookingController {
                     .filter(table -> table.getCapacity() >= requiredCapacity)
                     .collect(Collectors.toList());
 
-            // Hiển thị kết quả
             if (availableTables.isEmpty()) {
                 showAlert("Không có bàn trống phù hợp", Alert.AlertType.INFORMATION);
             } else {
@@ -109,7 +103,6 @@ public class BookingController {
         RestaurantTable selectedTable = availableTablesTable.getSelectionModel().getSelectedItem();
 
         if (selectedTable != null) {
-            // Thực hiện đặt bàn
             showAlert("Đã đặt bàn " + selectedTable.getTableNumber() + " thành công!",
                     Alert.AlertType.INFORMATION);
             // Cập nhật trạng thái bàn (trong thực tế sẽ lưu vào database)
@@ -122,7 +115,6 @@ public class BookingController {
 
     @FXML
     private void cancelBooking() {
-        // Reset form
         customerName.clear();
         phoneNumber.clear();
         bookingTime.setValue(null);
