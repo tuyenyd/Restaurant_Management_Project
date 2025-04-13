@@ -1,10 +1,10 @@
-package com.restaurant.restaurant_management_project..controllers;
+package com.restaurant.restaurant_management_project.controller;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import com.restaurant.restaurant_management_project..models.RestaurantTable;
+import com.restaurant.restaurant_management_project.model.RestaurantTable;
 
 import java.time.LocalDate;
 import java.util.Arrays;
