@@ -1,4 +1,4 @@
-package com.example.tuyenyd.controllers;
+package com.restaurant.restaurant_management_project..controllers;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
