@@ -4,7 +4,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import com.example.tuyenyd.models.RestaurantTable;
+import com.restaurant.restaurant_management_project..models.RestaurantTable;
 
 import java.time.LocalDate;
 import java.util.Arrays;
