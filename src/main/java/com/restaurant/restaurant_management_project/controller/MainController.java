@@ -1,4 +1,4 @@
-package com.example.tuyenyd.controllers;
+package com.restaurant.restaurant_management_project.controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
