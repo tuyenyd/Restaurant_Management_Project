@@ -1,4 +1,4 @@
-package com.example.tuyenyd.controllers;
+package com.restaurant.restaurant_management_project.controller;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -6,7 +6,7 @@ import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import com.example.tuyenyd.models.RestaurantTable;
+import com.restaurant.restaurant_management_project.model.RestaurantTable;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 
