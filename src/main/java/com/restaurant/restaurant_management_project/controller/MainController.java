@@ -12,16 +12,16 @@ public class MainController {
 
     @FXML
     public void showTableManagement() {
-        loadView("/com/example/tuyenyd/views/table-management.fxml");
+        loadView("/com/restaurant/restaurant_management_project/fxml/table-management.fxml");
     }
 
     @FXML
     public void showBookingView() {
-        loadView("/com/example/tuyenyd/views/booking-view.fxml");
+        loadView("/com/restaurant/restaurant_management_project/fxml/booking-view.fxml");
     }
     @FXML
     public void showStatisticsView() {
-        loadView("/com/example/tuyenyd/views/booking-statistics.fxml");
+        loadView("/com/restaurant/restaurant_management_project/fxml/booking-statistics.fxml");
     }
 
     private void loadView(String fxmlPath) {
