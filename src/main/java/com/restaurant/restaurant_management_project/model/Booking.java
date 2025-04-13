@@ -1,4 +1,4 @@
-package com.example.tuyenyd.models;
+package com.restaurant.restaurant_management_project.model;
 
 import java.time.LocalDate;
 
