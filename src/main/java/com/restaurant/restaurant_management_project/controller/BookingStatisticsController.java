@@ -1,4 +1,4 @@
-package com.example.tuyenyd.controllers;
+package com.restaurant.restaurant_management_project.controllers;
 
 
 import javafx.collections.FXCollections;
@@ -6,7 +6,7 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import com.example.tuyenyd.models.BookingStatistics;
+import com.restaurant.restaurant_management_project.models.BookingStatistics;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
